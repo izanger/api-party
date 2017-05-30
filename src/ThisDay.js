@@ -32,7 +32,6 @@ class ThisDay extends Component {
 
     getdate = () => {
         const x = new Date().toDateInputValue()
-        console.log(x)
         return x
 
     }
