@@ -19,24 +19,12 @@ class ThisDay extends Component {
         console.log(date)
         const day = date.substring(5, 7)
         const month = date.substring(8, 10)
-        // const s = {
-        //     longDate: this.state.longDate,
-        //     day: date.substr(5,7),
-        //     month: date.substr(8,10)
-        // }
-        this.setState({ day, month }, () => console.log(this.state))
+        this.setState({ day, month })
     }
 
     handleChange = (ev) => {
         const longDate = ev.currentTarget.value;
         this.setState({ longDate })
-
-        // const s = {
-        //     longDate: ev.currentTarget.value,
-        //     day: this.state.day,
-        //     month: this.state.month
-        // }
-        // this.setState(s)
     }
 
     getdate = () => {
