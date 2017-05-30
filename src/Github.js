@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Route} from 'react-router-dom'
+import GithubUser from './GithubUser'
 import './Github.css'
 
 class Github extends Component {
@@ -33,6 +34,7 @@ class Github extends Component {
                 </div>
             </form>  
             <Route exact path='/github' render={() => <h3>Please enter a username to search on GitHub</h3>} />
+            <Route path='/github/:username' component={GithubUser} />
           </div>
         )
     }
